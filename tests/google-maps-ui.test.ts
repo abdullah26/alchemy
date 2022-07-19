@@ -9,6 +9,8 @@ test("Google Map Loads and Searches for Dublin", async () => {
   const searchBarLocator: Locator = page.locator("input[id*='searchboxinput']");
   await searchBarLocator.fill(`Dublin`);
   await searchBarLocator.press("Enter");
+  //adding wait to observe the search results a side bar with h1 "Dublin"
+  await page.waitForSelector("h1:has-text('Dublin')");
   expect(page.locator("h1:has-text('Dublin')")).toBeTruthy();
   await page.close();
   await context.close();
