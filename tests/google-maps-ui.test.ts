@@ -1,6 +1,6 @@
 import { test, expect, Locator, chromium } from "@playwright/test";
 
-test("homepage has Playwright in title and get started link linking to the intro page", async () => {
+test("Google Map Loads and Searches for Dublin", async () => {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
