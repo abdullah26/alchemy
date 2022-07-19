@@ -1,0 +1,21 @@
+{
+  "name": "alchemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdullah26/alchemy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdullah26/alchemy/issues"
+  },
+  "homepage": "https://github.com/abdullah26/alchemy#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.23.4"
+  }
+}
